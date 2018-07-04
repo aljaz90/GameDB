@@ -1,3 +1,7 @@
-<p>
-  search works!
-</p>
+<section>
+  <h1>Search for a game!</h1>
+  <form (submit)="search()">
+    <input type="text" minlength="1" placeholder="game name" name="querry" [(ngModel)]="querry">
+    <input type="submit" class="btn btn-info">
+  </form>
+</section>
