@@ -1,9 +1,20 @@
 <section>
+<div class="search-form"> 
+ 
   <h1>Search for a game!</h1>
-  <form (submit)="search()">
-    <input type="text" minlength="1" placeholder="game name" name="query" [(ngModel)]="query">
-    <input type="submit" class="btn btn-info">
+</div>
+<div class="search-form">
+  <form class="form-inline md-form form-sm" (submit)="search()">
+        <div>
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input class="form-control form-control-sm ml-3 w-90" type="text" placeholder="Game name" minlength="1" name="query" [(ngModel)]="query">
+        </div>
+        <button type="submit" class="btn btn-dark">
+            <i class="fa fa-search" aria-hidden="true"></i> Search
+        </button>
   </form>
+</div>
+
   <hr>
   <div class="main-search">
     <div *ngFor="let x of this.result.results" class="card" style="width: 18rem;">
@@ -14,5 +25,5 @@
       </div>
     </div>
   </div>
-  
+
 </section>

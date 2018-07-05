@@ -6,9 +6,16 @@ input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
+    justify-content: center;
 }
 
 .card {
     margin:15px;
+}
+
+.search-form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
 }
