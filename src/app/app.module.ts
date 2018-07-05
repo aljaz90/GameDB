@@ -11,13 +11,15 @@ import { PodstranComponent } from './content/podstran/podstran.component';
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
 import { SearchComponent } from './content/search/search.component';
+import { GamedetailsComponent } from './content/gamedetails/gamedetails.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DomovComponent,
     PodstranComponent,
-    SearchComponent
+    SearchComponent,
+    GamedetailsComponent
   ],
   imports: [
     BrowserModule,

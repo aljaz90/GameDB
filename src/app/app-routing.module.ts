@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DomovComponent } from './content/domov/domov.component';
 import { PodstranComponent } from './content/podstran/podstran.component';
 import { SearchComponent } from './content/search/search.component';
+import { GamedetailsComponent } from './content/gamedetails/gamedetails.component'
 
 
 const routes: Routes = [
@@ -23,7 +24,10 @@ const routes: Routes = [
   {
     path: 'search',
     component: SearchComponent
-
+  },
+  {
+    path: 'game/:id',
+    component: GamedetailsComponent
   }
 ];
 

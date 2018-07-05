@@ -19,3 +19,7 @@ input {
     align-content: center;
     flex-direction: row;
 }
+
+.btn {
+    margin: 5px;
+}

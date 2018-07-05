@@ -39,7 +39,7 @@
         <div class="card-body">
             <h5 class="card-title"><strong>Random game</strong> {{result_rated.results[7].name}}</h5>
             <p class="card-text">{{result_rated.results[7].image.deck}}</p>
-            <a href="#" class="btn btn-dark">Go somewhere</a>
+            <a [routerLink]="['/game', result_rated.results[7].guid]" class="btn btn-dark">View more</a>
         </div>
     </div>
         <div class="card" style="width: 18rem;">
@@ -47,7 +47,7 @@
             <div class="card-body">
                 <h5 class="card-title"><strong>New release:</strong>  {{result_last.results[5].name}}</h5>
                 <p class="card-text">{{result_last.results[5].deck}}</p>
-                <a href="#" class="btn btn-dark">Go somewhere</a>
+                <a [routerLink]="['/game', result_last.results[5].guid]" class="btn btn-dark">View more</a>
             </div>
         </div>
     <div class="card" style="width: 18rem;"  >
@@ -55,7 +55,7 @@
         <div class="card-body">
             <h5 class="card-title"><strong>Popular games</strong> {{result_popular.results[1].name}}</h5>
             <p class="card-text">{{result_popular.results[1].deck}}</p>
-            <a href="#" class="btn btn-dark">Go somewhere else</a>
+            <a [routerLink]="['/game', result_popular.results[1].guid]" class="btn btn-dark">View more</a>
         </div>
     </div>
 </div>

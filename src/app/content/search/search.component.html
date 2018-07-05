@@ -21,6 +21,7 @@
       <img class="card-img-top" src="{{x.image.original_url}}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{x.name}}</h5>
+        <a [routerLink]="['/game', x.guid]" class="btn btn-primary">View More</a>
         <p class="card-text">{{x.deck}}</p>
       </div>
     </div>
