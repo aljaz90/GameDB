@@ -1,7 +1,18 @@
 <section>
   <h1>Search for a game!</h1>
   <form (submit)="search()">
-    <input type="text" minlength="1" placeholder="game name" name="querry" [(ngModel)]="querry">
+    <input type="text" minlength="1" placeholder="game name" name="query" [(ngModel)]="query">
     <input type="submit" class="btn btn-info">
   </form>
+  <hr>
+  <div class="main-search">
+    <div *ngFor="let x of this.result.results" class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{{x.image.original_url}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{x.name}}</h5>
+        <p class="card-text">{{x.deck}}</p>
+      </div>
+    </div>
+  </div>
+  
 </section>

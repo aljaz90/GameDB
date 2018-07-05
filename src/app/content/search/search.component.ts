@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-search',
@@ -7,24 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  querry;
-  constructor() { }
+  query;
+  result;
+  constructor(private http: HttpClient) { }
+
+  getApiUrl():string{
+    var baseUrl='https://www.giantbomb.com/api/search';
+    var apiKey='ad89fa0ba26ac9972d2312d08046f9c77a2d214e';
+    
+    var url=`${baseUrl}/?api_key=${apiKey}&format=jsonp&resources=game&query=${this.query}`
+    return url;
+  }
 
   ngOnInit() {
   }
   search(){
-    console.log(this.querry)
-    fetch('https://api-endpoint.igdb.com/games/?search=Halo',{
-      headers: {
-        "Accept": "application/json",
-        "user-key": "2eba42ae20fcc61c3ab4e3917ea36856"
-      }
-    })
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(myJson) {
-      console.log(myJson);
+    console.log(this.query)
+    var url=this.getApiUrl();
+    this.http.jsonp(url, "json_callback").subscribe(result=>{
+      this.result = result;
+      console.log("*******************")
+      console.log(this.result)
+      this.query = "";
     });
   }
 

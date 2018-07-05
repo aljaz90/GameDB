@@ -1,3 +1,13 @@
 input {
     margin: 10px;
 }
+
+.main-search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin:15px;
+}
