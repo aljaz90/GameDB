@@ -5,3 +5,62 @@
 .container{
     margin: auto;
 }
+
+.authors{
+    color: white;
+    
+}
+
+.authors:hover{
+    color: gold;
+    
+}
+.authors:link {
+    text-decoration: none;
+}
+
+.authors:visited {
+    text-decoration: none;
+}
+
+footer{
+    background-color: black;
+    padding-top: 20px;
+    margin-top:  20px;
+    padding-bottom:  40px;
+}
+
+.social{
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.social:hover{
+    color: gold;
+    
+}
+.social:link {
+    text-decoration: none;
+}
+
+.social:visited {
+    text-decoration: none;
+}   
+
+.up{
+    /*margin-top: 10px;*/ 
+    color: white;
+    font-size: 32px;
+}
+.up:hover{
+    color: gold;
+}
+   
+.up:link {
+    text-decoration: none;
+}
+
+.up:visited {
+    text-decoration: none;
+}   
