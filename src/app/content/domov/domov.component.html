@@ -12,7 +12,7 @@
                                     <p class="lead">This is number one page for rating games.</p>
                                     <hr class="my-4">
                                     <p>With over 50 000 monthy users we make sure to keep you updated!</p>
-                                    <a class="btn btn-dark btn-lg" href="#" role="button">Browse the games</a>
+                                    <a class="btn btn-dark btn-lg" routerLink="/search" role="button">Browse the games</a>
                                 </div>        
   
                 </div>
@@ -45,7 +45,7 @@
         <div class="card-body">
             <h5 class="card-title"><strong>Random game</strong> {{result_rated.results[7].name}}</h5>
             <p class="card-text">{{result_rated.results[7].image.deck}}</p>
-            <a href="#" class="btn btn-dark">Go somewhere</a>
+            <a [routerLink]="['/game', result_rated.results[7].guid]" class="btn btn-dark">View More</a>
         </div>
     </div>
         <div class="card" style="width: 18rem;">
@@ -53,7 +53,7 @@
             <div class="card-body">
                 <h5 class="card-title"><strong>New release:</strong>  {{result_last.results[5].name}}</h5>
                 <p class="card-text">{{result_last.results[5].deck}}</p>
-                <a href="#" class="btn btn-dark">Go somewhere</a>
+                <a [routerLink]="['/game', result_last.results[5].guid]" class="btn btn-dark">View More</a>
             </div>
         </div>
     <div class="card" style="width: 18rem;"  >
@@ -61,7 +61,7 @@
         <div class="card-body">
             <h5 class="card-title"><strong>Popular games</strong> {{result_popular.results[1].name}}</h5>
             <p class="card-text">{{result_popular.results[1].deck}}</p>
-            <a href="#" class="btn btn-dark">Go somewhere else</a>
+            <a [routerLink]="['/game', result_popular.results[1].guid]" class="btn btn-dark">View More</a>
         </div>
     </div>
 </div>
