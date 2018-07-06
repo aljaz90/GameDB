@@ -37,7 +37,7 @@ export class DomovComponent implements OnInit {
    }
 
   getApiUrl(params:string):string{
-    var baseUrl='http://www.giantbomb.com/api/games';
+    var baseUrl='https://www.giantbomb.com/api/games';
     var apiKey='ad89fa0ba26ac9972d2312d08046f9c77a2d214e';
     
     var url=`${baseUrl}/?api_key=${apiKey}&format=jsonp${params}`
