@@ -1,18 +1,19 @@
-<nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
-  <div href="#">
-    <a href="#">
-     <img src="https://image.ibb.co/euoguy/logoDB.png" width="125" height="84" class="d-inline-block align-top">
-    </a>
-   </div>
-   <div>
-     <form class="search">
-      <input class="form-control mr-sm-2" type="search" placeholder="Game name" aria-label="Game name">
-      <button type="button" class="btn btn-outline-light">Search</button>        
-    </form>
-   </div>
-   
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="#">  
+        <img src="https://image.ibb.co/euoguy/logoDB.png" width="150" height="101" class="d-inline-block align-top">
+     </a>
   
-</nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto" style="color: white; font-weight: bold">
+        <a class="links" href="#">Search the games</a>
+      </div>
+      <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Game name" aria-label="Game name">
+          <button type="submit" class="btn btn-outline-light">Search</button>        
+        </form>
+    </div>
+  </nav>
+
 <div class="container">
   <router-outlet></router-outlet>
 </div>

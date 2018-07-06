@@ -1,11 +1,11 @@
 .nav-link{
     font-size: 20px
 }
-
+/*
 .container{
     margin: auto;
 }
-
+*/
 .authors{
     color: white;
     
@@ -65,6 +65,12 @@ footer{
     text-decoration: none;
 }   
 
-.search{
-    display: flex;
+.links:link {
+    text-decoration: none;
+    color: white;
+}
+
+.links:visited {
+    text-decoration: none;
+    color: white;
 }
