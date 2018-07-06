@@ -23,14 +23,11 @@
     text-decoration: none;
 }
 
-footer{
+navbar{
     background-color: black;
     padding-top: 20px;
     margin-top:  20px;
     padding-bottom:  40px;
-    right: 0;
-    left: 0;
-    bottom: 0;
 }
 
 .social{

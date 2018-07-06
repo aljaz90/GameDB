@@ -6,4 +6,6 @@ section {
 
 body {
     font-family: 'Comfortaa', cursive !important;
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
