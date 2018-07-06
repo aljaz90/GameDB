@@ -9,6 +9,15 @@
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
+    align-items: center;
 
+}
+.badge {
+    margin: 5px;
+}
 
+.genres {
+    display: inline-grid;
+    font-weight: bold;
+    margin-left: 25px;
 }

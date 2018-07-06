@@ -1,12 +1,17 @@
 <div class="container">
   <div class="name">
     <h3 style="font-size: 50px;font-weight: bolder;" >{{result.results.name}}</h3>
+    <h6 class="genres">Genres: <span *ngFor="let x of result.results.genres" class="badge badge-primary">{{x.name}}</span></h6>
   </div>
   <span>
     
   </span>
   <span>
   <img style="border-radius: 2%;float: right; padding: 30px; max-width: 75%;" src="{{result.results.image.screen_large_url}}" alt="Cover Image">
+  <h5>Platfroms:</h5>
+    <ul>
+      <li *ngFor="let x of result.results.platforms">{{x.name}}</li>
+    </ul>
   <div [innerHTML]="result.results.description" class="main">
   </div>
   </span>

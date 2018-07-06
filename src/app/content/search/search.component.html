@@ -1,21 +1,23 @@
 <section>
-<div class="search-form"> 
- 
-  <h1>Search for a game!</h1>
-</div>
-<div class="search-form">
-  <form class="form-inline md-form form-sm" (submit)="search()">
-        <div>
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <input class="form-control form-control-sm ml-3 w-90" type="text" placeholder="Game name" minlength="1" name="query" [(ngModel)]="query">
-        </div>
-        <button type="submit" class="btn btn-dark">
-            <i class="fa fa-search" aria-hidden="true"></i> Search
-        </button>
-  </form>
-</div>
+  
+  
+  <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Here you can search for games!</h1>
+        <p class="lead">Search among huge database of games without ads!</p>
+        <div class="search-form">
+            <form class="form-inline md-form form-sm" (submit)="search()">
+                  <div>
+                  <input class="form-control form-control-sm ml-3 w-90" type="text" placeholder="Game name" minlength="1" name="query" [(ngModel)]="query">
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                      <i class="fa fa-search" aria-hidden="true"></i> Search
+                  </button>
+            </form>
+          </div>  
+      </div>
+    </div>
 
-  <hr>
   <div class="main-search">
     <div *ngFor="let x of this.result.results" class="card" style="width: 18rem;">
       <img class="card-img-top" src="{{x.image.original_url}}" alt="Card image cap">
@@ -26,5 +28,7 @@
       </div>
     </div>
   </div>
+
+  
 
 </section>
