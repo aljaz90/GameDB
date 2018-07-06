@@ -1,0 +1,14 @@
+
+.container{
+    padding: 40px; 
+    background-color: rgba(220,220,220,0.2);
+     
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+
+}

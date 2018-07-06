@@ -43,25 +43,25 @@
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="{{result_rated.results[7].image.original_url}}" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title"><strong>Random game</strong> {{result_rated.results[7].name}}</h5>
+            <h5 class="card-title"><strong>Random game:</strong> {{result_rated.results[7].name}}</h5>
             <p class="card-text">{{result_rated.results[7].image.deck}}</p>
             <a [routerLink]="['/game', result_rated.results[7].guid]" class="btn btn-dark">View More</a>
         </div>
     </div>
         <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="{{result_last.results[5].image.original_url}}" alt="Card image cap">
+            <img class="card-img-top" src="{{result_last.results[0].image.original_url}}" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title"><strong>New release:</strong>  {{result_last.results[5].name}}</h5>
-                <p class="card-text">{{result_last.results[5].deck}}</p>
-                <a [routerLink]="['/game', result_last.results[5].guid]" class="btn btn-dark">View More</a>
+                <h5 class="card-title"><strong>New release:</strong>  {{result_last.results[0].name}}</h5>
+                <p class="card-text">{{result_last.results[0].deck}}</p>
+                <a [routerLink]="['/game', result_last.results[0].guid]" class="btn btn-dark">View More</a>
             </div>
         </div>
     <div class="card" style="width: 18rem;"  >
-        <img class="card-img-top" src="{{result_popular.results[1].image.original_url}}" alt="Card image cap">
+        <img class="card-img-top" src="{{result_popular.results[5].image.original_url}}" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title"><strong>Popular games</strong> {{result_popular.results[1].name}}</h5>
-            <p class="card-text">{{result_popular.results[1].deck}}</p>
-            <a [routerLink]="['/game', result_popular.results[1].guid]" class="btn btn-dark">View More</a>
+            <h5 class="card-title"><strong>Popular games:</strong> {{result_popular.results[5].name}}</h5>
+            <p class="card-text">{{result_popular.results[5].deck}}</p>
+            <a [routerLink]="['/game', result_popular.results[5].guid]" class="btn btn-dark">View More</a>
         </div>
     </div>
 </div>
